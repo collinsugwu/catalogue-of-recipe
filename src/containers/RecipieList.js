@@ -1,9 +1,11 @@
-import * as React from 'react';
+import React from 'react';
+import DishesList from './DishesList';
 
-export const RecipesList = () => {
-  return (
-    <div>
-      
-    </div>
-  );
-};
+const SearchResult = () => (
+  <div>
+    <DishesList />
+  </div>
+);
+
+
+export default SearchResult;
