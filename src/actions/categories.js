@@ -1,20 +1,15 @@
-import { FETCH_ERROR, FETCH_CATEGORIES, FETCHING } from './types';
+import * as Types from './types';
 
-const fetchCategoris = () => dispatch => {
-    dispatch({
-        type: FETCHING,
-        isFetching: true,
-        isSearching: true,
-    });
-    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php`)
+const fetchCategories = () => dispatch => {
+  fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
     .then(response => response.json())
     .then(categories => {
-        dispatch({
-            type: FETCH_CATEGORIES,
-            categories: categories.categories
-        });
-    }).catch(err => dispatch({
-        type: FETCH_ERROR,
-        error: err,
-      }));;
-}
+      dispatch({
+        type: Types.FETCH_CATEGORIES,
+        categories: categories.categories,
+      });
+    })
+    .catch(error => error);
+};
+
+export { fetchCategories };

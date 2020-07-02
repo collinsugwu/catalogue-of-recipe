@@ -1,11 +1,9 @@
 import {FETCH_CATEGORIES, FETCHING_CATEGORIES } from '../actions/types';
 
-export default (state = {categories = [], isFetching = false}, actions) => {
-    switch (actions.type){
-        case FETCHING_CATEGORIES:
-            return {...state, isFetching: true};
+export default (state = [],  action) => {
+    switch (action.type){
         case FETCH_CATEGORIES:
-            return {...state, categories:actions.categories, isFetching: true}
+            return action.categories;
         default:
             return state;
     }
