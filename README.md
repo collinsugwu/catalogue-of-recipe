@@ -8,7 +8,7 @@
 
 [HomeMade](https://xenodochial-fermat-cc6497.netlify.app/) provides you the recipes for the best dishes. Browse per category of dishes and find the recipe for you favourite dish. You can also find dishes based on the type of recipes you want.
 
-![Screenshot of the webpage](https://github.com/collinsugwu/catalogue-of-recipe/blob/implement-catalogue/src/images/homemade.PNG)
+![Screenshot of the webpage](https://github.com/collinsugwu/catalogue-of-recipe/blob/development/src/images/homemade.PNG)
 
 ## Prerequisites
 
