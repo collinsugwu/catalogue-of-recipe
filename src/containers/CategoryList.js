@@ -3,27 +3,29 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {fetchCategories} from '../actions/categories';
 import Category from '../components/Category';
-import { Row } from 'antd';
 import loading from '../images/loader.gif';
+import '../styles/home.scss';
 
 
 const CategoryList = props =>{
-  console.log(props);
     const {categories, fetchCategories, dishes} = props;
     useEffect(() => {
         fetchCategories();
       }, [fetchCategories, dishes]);
 
       return (
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-                {categories.length === 0 ? (
+        <div className="categoriesList">
+      <div className="categories">
+        {categories.length === 0 ? (
           <div className="loading">
             <img src={loading} alt="loading" />
           </div>
         ) : (
           categories.map(cat => <Category key={cat.idCategory} cat={cat} />)
         )}
-        </Row>
+      </div>
+
+    </div>
       );
 }
 
