@@ -6,11 +6,11 @@ import IngredientSearch from '../containers/IngredientSearch';
 const Header = () => (
   <header>
     <Link to="/">
-      <h1>Recipias</h1>
+      <h1>HomeMade</h1>
     </Link>
     <IngredientSearch />
     <div>
-      <span>Get your favourite dish recipe.</span>
+      <span>Home made dishes.</span>
     </div>
   </header>
 );

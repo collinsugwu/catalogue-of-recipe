@@ -1,7 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CategoryList from '../containers/CategoryList';
+import DishList from '../containers/DishList';
+import Dish from '../containers/Dish';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
+import SearchResult from '../containers/SearchResult';
 
 export default (
     <Router>
@@ -17,9 +21,10 @@ export default (
                 <Dish />
             </Route>
             <Route path="/:categoryId">
-                <DishesList />
+                <DishList />
             </Route>
             <Route path="/" component={CategoryList} />
         </Switch>
+        <Footer/>
     </Router>
 );
