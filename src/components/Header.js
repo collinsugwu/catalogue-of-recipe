@@ -1,14 +1,18 @@
 import React from 'react';
-import Filter from './Filter';
+import '../styles/header.scss';
+import { Link } from 'react-router-dom';
+import IngredientSearch from '../containers/IngredientSearch';
 
-const header = () => (
-    <header>
-        <ul>
-            <li>Foody</li>
-            <li><Filter></Filter></li>
-            <li>Get dishes</li>
-        </ul>
-    </header>
+const Header = () => (
+  <header>
+    <Link to="/">
+      <h1>HomeMade</h1>
+    </Link>
+    <IngredientSearch />
+    <div>
+      <span>Home made dishes.</span>
+    </div>
+  </header>
 );
 
-export default header;
+export default Header;
