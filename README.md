@@ -49,6 +49,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
 To contribute to the catalogue of receipes, follow these steps:
 
+
 1. Fork this repository.
 2. Create a branch: `git checkout -b feature/awesome_branch`.
 3. Make your changes and commit them: `git commit -m 'awesome message'`
