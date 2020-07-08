@@ -1,6 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
-const Filter = () => (
-  <div />
-);
+const Filter = () => <div />;
 export default Filter;

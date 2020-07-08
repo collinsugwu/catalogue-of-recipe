@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import React from "react";
+import { Link, useRouteMatch } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Dish = ({ dish }) => {
   const { strMeal, strMealThumb, idMeal } = dish;
@@ -17,9 +17,9 @@ const Dish = ({ dish }) => {
 };
 Dish.defaultProps = {
   dish: {
-    strMeal: '',
-    strMealThumb: '',
-    idMeal: '',
+    strMeal: "",
+    strMealThumb: "",
+    idMeal: "",
   },
 };
 Dish.propTypes = {
