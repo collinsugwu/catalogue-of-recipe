@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/header.scss";
-import IngredientSearch from "../containers/IngredientSearch";
+import React from ' react' ;
+import { Link } from ' react-router-dom' ;
+import ' ../styles/header.scss' ;
+import IngredientSearch from ' ../containers/IngredientSearch' ;
 
 const Header = () => (
   <header>
-    <Link to="/">
+    <Link to=' /' >
       <h1>HomeMade</h1>
     </Link>
     <IngredientSearch />

@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import { connect } from "react-redux";
-import { useParams } from "react-router-dom";
-import PropTypes from "prop-types";
-import { fetchDish } from "../actions/dish";
-import { getIngredients } from "../utils/dish";
-import "../styles/dish.scss";
-import { Loading } from "../components/Loading";
+import React, { useEffect } from ' react' ;
+import { connect } from ' react-redux' ;
+import { useParams } from ' react-router-dom' ;
+import PropTypes from ' prop-types' ;
+import { fetchDish } from ' ../actions/dish' ;
+import { getIngredients } from ' ../utils/dish' ;
+import ' ../styles/dish.scss' ;
+import { Loading } from ' ../components/Loading' ;
 
 const Dish = (props) => {
   const { dishId } = useParams();
@@ -22,15 +22,15 @@ const Dish = (props) => {
       {isFetching ? (
         <Loading />
       ) : (
-        <div className="dish-container">
-          <div className="dish">
+        <div className=' dish-container' >
+          <div className=' dish' >
             <h1>{strMeal}</h1>
             <img src={strMealThumb} alt={strMeal} />
-            <div className="instructions">
+            <div className=' instructions' >
               <h3>Instructions</h3>
               <p>{strInstructions}</p>
             </div>
-            <div className="ingredients">
+            <div className=' ingredients' >
               <h3>Ingredients</h3>
               <ul>
                 {ingredients.length === 0 ? (
@@ -52,9 +52,9 @@ const Dish = (props) => {
 
 Dish.defaultProps = {
   dish: {
-    strMeal: "",
-    strInstructions: "",
-    strMealThumb: "",
+    strMeal: ' ' ,
+    strInstructions: ' ' ,
+    strMealThumb: ' ' ,
   },
   fetchDish: () => undefined,
   isFetching: false,

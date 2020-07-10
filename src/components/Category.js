@@ -1,16 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import "../styles/categories.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import '../styles/categories.scss';
 
 const Category = ({ cat }) => {
   const { strCategory, strCategoryDescription, strCategoryThumb } = cat;
   return (
-    <section className="category">
+    <section className='category'>
       <Link to={`/${strCategory}`}>
         <h1>{strCategory}</h1>
       </Link>
-      <img data-testid="image" alt={strCategory} src={strCategoryThumb} />
+      <img data-testid='image' alt={strCategory} src={strCategoryThumb} />
       <p>{strCategoryDescription}</p>
     </section>
   );
@@ -18,9 +18,9 @@ const Category = ({ cat }) => {
 
 Category.defaultProps = {
   cat: {
-    strCategory: "",
-    strCategoryDescription: "",
-    strCategoryThumb: "",
+    strCategory: '',
+    strCategoryDescription: '',
+    strCategoryThumb: '',
   },
 };
 Category.propTypes = {

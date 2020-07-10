@@ -1,4 +1,4 @@
-import { FETCH_DISH, FETCHING_DISH } from "./types";
+import { FETCH_DISH, FETCHING_DISH } from './types';
 
 const fetchDish = (dishId) => (dispatch) => {
   dispatch({

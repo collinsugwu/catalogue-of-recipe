@@ -1,4 +1,4 @@
-import { FETCH_ERROR, FETCH_DISHES, FETCHING } from "./types";
+import { FETCH_ERROR, FETCH_DISHES, FETCHING } from './types';
 
 export const fetchDishes = (category) => (dispatch) => {
   dispatch({

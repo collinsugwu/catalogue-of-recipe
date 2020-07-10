@@ -1,4 +1,4 @@
-import { SET_INGREDIENT, FETCH_DISHES, FETCHING } from "./types";
+import { SET_INGREDIENT, FETCH_DISHES, FETCHING } from './types';
 
 export const setIngredient = (ingredient) => ({
   type: SET_INGREDIENT,
