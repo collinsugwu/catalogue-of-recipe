@@ -52,3 +52,4 @@ const mapDispathToProps = (dispatch) => ({
 });
 
 export default connect(null, mapDispathToProps)(IngredientSearch);
+

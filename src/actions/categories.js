@@ -14,3 +14,4 @@ const fetchCategories = () => dispatch => {
 
 export { fetchCategories };
 
+

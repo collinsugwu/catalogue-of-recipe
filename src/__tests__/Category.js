@@ -34,3 +34,4 @@ describe('It test the category component', () => {
     );
   });
 });
+

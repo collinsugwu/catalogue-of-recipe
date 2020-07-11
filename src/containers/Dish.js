@@ -76,3 +76,4 @@ const mapStateToProps = (state) => ({
   isFetching: state.dish.isFetching,
 });
 export default connect(mapStateToProps, mapDispatchToProps)(Dish);
+

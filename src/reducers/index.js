@@ -8,3 +8,4 @@ import searched from './searchedDishes';
 export default combineReducers({
     categories, dishes, dish, searched
 });
+

@@ -16,3 +16,4 @@ export const Loading = () => (
     <img style={styles.img} src={loading} alt='loading'  />
   </div>
 );
+

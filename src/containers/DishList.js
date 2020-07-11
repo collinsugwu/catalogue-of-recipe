@@ -52,3 +52,4 @@ const mapStateToProps = (state) => ({
   isFetching: state.dishes.isFetching,
 });
 export default connect(mapStateToProps, mapDispatchToProps)(DishesList);
+

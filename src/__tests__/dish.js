@@ -13,3 +13,4 @@ describe('meal util functions', () => {
     expect(getIngredients(meal)).toStrictEqual(['Poivre - 1kg', 'Sel - pinch']);
   });
 });
+

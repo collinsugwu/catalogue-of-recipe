@@ -18,3 +18,4 @@ const fetchDish = dishId => dispatch => {
 };
 
 export { fetchDish };
+
