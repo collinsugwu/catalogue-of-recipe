@@ -1,5 +1,5 @@
-import React from ' react' ;
-import DishesList from ' ./DishesList' ;
+import React from 'react' ;
+import DishesList from './DishesList' ;
 
 const SearchResult = () => (
   <div>
