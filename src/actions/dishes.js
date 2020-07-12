@@ -18,8 +18,7 @@ export const fetchDishes = category => dispatch => {
     .catch(err =>
       dispatch({
         type: FETCH_ERROR,
-        error: err,
+        error: err
       })
     );
 };
-

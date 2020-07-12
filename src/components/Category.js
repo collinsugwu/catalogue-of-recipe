@@ -6,11 +6,11 @@ import '../styles/categories.scss';
 const Category = ({ cat }) => {
   const { strCategory, strCategoryDescription, strCategoryThumb } = cat;
   return (
-    <section className='category'>
+    <section className="category">
       <Link to={`/${strCategory}`}>
         <h1>{strCategory}</h1>
       </Link>
-      <img data-testid='image' alt={strCategory} src={strCategoryThumb} />
+      <img data-testid="image" alt={strCategory} src={strCategoryThumb} />
       <p>{strCategoryDescription}</p>
     </section>
   );

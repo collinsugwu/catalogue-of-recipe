@@ -1,5 +1,5 @@
-import React from 'react' ;
-import loading from '../images/loading.gif' ;
+import React from 'react';
+import loading from '../images/loading.gif';
 
 const styles = {
   loading: {
@@ -13,7 +13,7 @@ const styles = {
 };
 export const Loading = () => (
   <div style={styles.loading}>
-    <img style={styles.img} src={loading} alt='loading'  />
+    <img style={styles.img} src={loading} alt="loading"/>
   </div>
 );
 

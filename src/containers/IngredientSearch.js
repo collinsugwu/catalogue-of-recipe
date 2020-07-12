@@ -1,15 +1,15 @@
-import React, { useState } from 'react' ;
-import { connect } from 'react-redux' ;
-import { PropTypes } from 'prop-types' ;
-import { useHistory } from 'react-router-dom' ;
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
+import { useHistory } from 'react-router-dom';
 import {
   searchByIngredients,
   setIngredient,
-} from '../actions/searchIngredient' ;
+} from '../actions/searchIngredient';
 
 const IngredientSearch = (props) => {
   const { searchByIngredients, setIngredient } = props;
-  const [ingredient, setStateIngredient] = useState('  ' );
+  const [ingredient, setStateIngredient] = useState('  ');
   const history = useHistory();
 
   const submitIngredient = (e) => {
@@ -19,18 +19,18 @@ const IngredientSearch = (props) => {
     history.push(`/search/${ingredient}`);
   };
   return (
-    <div className='searchForm' >
+    <div className="searchForm">
       <form onSubmit={submitIngredient}>
-        <label htmlFor='search' >
+        <label htmlFor="search">
           <input
-            id='search' 
-            type='text' 
-            placeholder='Search by ingredient' 
-            name='ingredientInput' 
+            id="search"
+            type="text"
+            placeholder="Search by ingredient" 
+            name="ingredientInput"
             onChange={(e) => setStateIngredient(e.target.value)}
             value={ingredient}
           />
-          <button type='submit' >Search</button>
+          <button type="submit" >Search</button>
         </label>
       </form>
     </div>

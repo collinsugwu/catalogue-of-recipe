@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react' ;
-import { connect } from 'react-redux' ;
-import { useParams } from 'react-router-dom' ;
-import PropTypes from 'prop-types' ;
-import { fetchDishes } from '../actions/dishes' ;
-import { Dish } from '../components/Dish' ;
-import '../styles/dishes.scss' ;
-import { Loading } from '../components/Loading' ;
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { fetchDishes } from '../actions/dishes';
+import { Dish } from '../components/Dish';
+import '../styles/dishes.scss';
+import { Loading } from '../components/Loading';
 
 const DishesList = (props) => {
   const { categoryId } = useParams();
@@ -16,15 +16,15 @@ const DishesList = (props) => {
     }
   }, [fetchDishes, categoryId]);
   return (
-    <div className='dishesList' >
+    <div className="dishesList">
       {isFetching ? (
         <Loading />
       ) : dishes.length === 0 ? (
-        <div className='notfound' >
+        <div className="notfound">
           <p>No dish found!</p>
         </div>
       ) : (
-        dishes.map((dish) => <Dish key={dish.idMeal} dish={dish} />)
+        dishes.map((dish) => <Dish key={dish.idMeal} dish={dish}/>)
       )}
     </div>
   );
