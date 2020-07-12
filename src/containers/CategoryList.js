@@ -13,14 +13,14 @@ const CategoryList = props => {
   }, [fetchCategories, dishes]);
 
   return (
-    <div className="categoriesList" >
-      <div className="categories" >
+    <div className="categoriesList">
+      <div className="categories">
         {categories.length === 0 ? (
-          <div className="loading" >
-            <img src={loading} alt="loading"/>
+          <div className="loading">
+            <img src={loading} alt="loading" />
           </div>
         ) : (
-          categories.map(cat => <Category key={cat.idCategory} cat={cat}/>)
+          categories.map(cat => <Category key={cat.idCategory} cat={cat} />)
         )}
       </div>
     </div>
@@ -37,12 +37,12 @@ CategoryList.propTypes = {
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       strCategory: PropTypes.string,
-    })
+    }),
   ),
   dishes: PropTypes.arrayOf(
     PropTypes.shape({
       strMeal: PropTypes.string,
-    })
+    }),
   ),
   fetchCategories: PropTypes.func,
 };
@@ -61,4 +61,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CategoryList);
-

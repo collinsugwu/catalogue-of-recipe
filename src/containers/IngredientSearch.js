@@ -7,12 +7,12 @@ import {
   setIngredient,
 } from '../actions/searchIngredient';
 
-const IngredientSearch = (props) => {
+const IngredientSearch = props => {
   const { searchByIngredients, setIngredient } = props;
-  const [ingredient, setStateIngredient] = useState('  ');
+  const [ingredient, setStateIngredient] = useState(' ');
   const history = useHistory();
 
-  const submitIngredient = (e) => {
+  const submitIngredient = e => {
     e.preventDefault();
     setIngredient(ingredient);
     searchByIngredients(ingredient);
@@ -25,12 +25,12 @@ const IngredientSearch = (props) => {
           <input
             id="search"
             type="text"
-            placeholder="Search by ingredient" 
+            placeholder="Search by ingredient"
             name="ingredientInput"
-            onChange={(e) => setStateIngredient(e.target.value)}
+            onChange={e => setStateIngredient(e.target.value)}
             value={ingredient}
           />
-          <button type="submit" >Search</button>
+          <button type="submit">Search</button>
         </label>
       </form>
     </div>
@@ -45,11 +45,9 @@ IngredientSearch.propTypes = {
   setIngredient: PropTypes.func,
 };
 
-const mapDispathToProps = (dispatch) => ({
-  searchByIngredients: (ingredient) =>
-    dispatch(searchByIngredients(ingredient)),
-  setIngredient: (ingredient) => dispatch(setIngredient(ingredient)),
+const mapDispathToProps = dispatch => ({
+  searchByIngredients: ingredient => dispatch(searchByIngredients(ingredient)),
+  setIngredient: ingredient => dispatch(setIngredient(ingredient)),
 });
 
 export default connect(null, mapDispathToProps)(IngredientSearch);
-

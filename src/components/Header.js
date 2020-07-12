@@ -5,7 +5,7 @@ import IngredientSearch from '../containers/IngredientSearch';
 
 const Header = () => (
   <header>
-    <Link to='/' >
+    <Link to="/">
       <h1>HomeMade</h1>
     </Link>
     <IngredientSearch />
@@ -16,4 +16,3 @@ const Header = () => (
 );
 
 export default Header;
-

@@ -8,23 +8,23 @@ import Footer from '../components/Footer';
 import SearchResult from '../containers/SearchResult';
 
 export default (
-    <Router>
-        <Header/>
-        <Switch>
-            <Route exact path='/search/:ingredient' >
-                <SearchResult />
-            </Route>
-            <Route path='/search/:ingredient/:dishId' >
-                <Dish />
-            </Route>
-            <Route path='/:categoryId/:dishId' >
-                <Dish />
-            </Route>
-            <Route path='/:categoryId' >
-                <DishList />
-            </Route>
-            <Route path='/' component={CategoryList} />
-        </Switch>
-        <Footer/>
-    </Router>
+  <Router>
+    <Header />
+    <Switch>
+      <Route exact path="/search/:ingredient">
+        <SearchResult />
+      </Route>
+      <Route path="/search/:ingredient/:dishId">
+        <Dish />
+      </Route>
+      <Route path="/:categoryId/:dishId">
+        <Dish />
+      </Route>
+      <Route path="/:categoryId">
+        <DishList />
+      </Route>
+      <Route path="/" component={CategoryList} />
+    </Switch>
+    <Footer />
+  </Router>
 );

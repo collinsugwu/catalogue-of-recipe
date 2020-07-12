@@ -29,7 +29,7 @@ describe('It test the category component', () => {
       wrapper: MemoryRouter,
     });
     expect(getByTestId('image')).toHaveAttribute(
-      'src', expect.stringContaining('image.png')
+      'src', expect.stringContaining('image.png'),
     );
   });
 });

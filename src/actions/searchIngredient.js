@@ -21,4 +21,3 @@ export const searchByIngredients = ingredient => dispatch => {
     })
     .catch(err => err);
 };
-

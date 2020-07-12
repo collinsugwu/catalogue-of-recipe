@@ -1,4 +1,3 @@
-
 import * as Types from '../actions/types';
 
 export default (state = { ingredient: '' }, action) => {

@@ -7,7 +7,7 @@ const Dish = ({ dish }) => {
   const { url } = useRouteMatch();
 
   return (
-    <div className='dish'>
+    <div className="dish">
       <Link to={`${url}/${idMeal}`}>
         <h2>{strMeal}</h2>
       </Link>
@@ -31,4 +31,3 @@ Dish.propTypes = {
 };
 
 export { Dish };
-

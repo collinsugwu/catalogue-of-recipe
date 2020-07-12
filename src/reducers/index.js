@@ -6,6 +6,5 @@ import dish from './dish';
 import searched from './searchedDishes';
 
 export default combineReducers({
-    categories, dishes, dish, searched
+  categories, dishes, dish, searched,
 });
-

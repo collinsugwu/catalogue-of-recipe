@@ -6,4 +6,3 @@ export const FETCH_ERROR = 'FETCH_ERROR';
 export const SET_INGREDIENT = 'SET_INGREDIENT';
 export const FETCHING_DISH = 'FETCHING_DISH';
 export const FETCHING = 'FETCHING';
-

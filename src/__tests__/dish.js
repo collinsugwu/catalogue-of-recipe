@@ -1,6 +1,5 @@
 import { getIngredients } from '../utils/dish';
 
-
 describe('meal util functions', () => {
   it('returns the list of ingredients in array', () => {
     const meal = {
@@ -13,4 +12,3 @@ describe('meal util functions', () => {
     expect(getIngredients(meal)).toStrictEqual(['Poivre - 1kg', 'Sel - pinch']);
   });
 });
-

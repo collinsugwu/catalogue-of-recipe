@@ -32,4 +32,3 @@ Category.propTypes = {
 };
 
 export default Category;
-
