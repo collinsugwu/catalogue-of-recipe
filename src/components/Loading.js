@@ -4,7 +4,7 @@ import loading from '../images/loading.gif';
 const styles = {
   loading: {
     width: '50%',
-    margin: 'auto' ,
+    margin: 'auto',
   },
   img: {
     margin: '50px auto',
@@ -16,4 +16,3 @@ export const Loading = () => (
     <img style={styles.img} src={loading} alt="loading" />
   </div>
 );
-
