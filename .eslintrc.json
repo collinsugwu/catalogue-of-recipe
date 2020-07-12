@@ -34,6 +34,7 @@
         "no-unused-vars": "off",
         "import/prefer-default-export":"off",
         "no-nested-ternary":"off",
-        "jsx-a11y/href-no-hash": [0]
+        "jsx-a11y/href-no-hash": [0],
+        "jsx-a11y/img-has-alt": [0]
     }
 }
